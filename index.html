@@ -307,7 +307,44 @@
             </footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <script src="wom/js/slick.min.js"></script>
-    <script src="wom/js/start.js"></script>
+        <script src="js/slick.min.js"></script>
+    <script src="js/start.js">$(document).ready(function(){
+    $(".oneblock__sliderleft").slick({
+        arrows:false,
+        dots:true,
+        autoplay:true,
+        autoplaySpeed: 2500,
+        asNavFor: ".oneblock__sliderritht"
+
+    });
+    $(".oneblock__sliderritht").slick({
+        arrows:false,
+        fade:true,
+        autoplay:true,
+        autoplaySpeed: 2500,
+        asNavFor: ".oneblock__sliderleft"
+
+    });
+
+    let title = document.querySelector('.twoblock__dollars');
+let arr = title.innerHTML.split(' ');
+arr[0] = '<span>' + arr[0] + '</span>';
+title.innerHTML = arr.join(' ');
+$(".fourblock__slider").slick({
+    arrows:true,
+    dots:true,
+    autoplay:true,
+    autoplaySpeed: 2500,
+    
+
+});
+$('.header__burger').click(function(event){
+    $('.header__burger, .header__max').toggleClass('active');
+    $('body').toggleClass('lock');
+    
+});
+
+});
+</script>
     </body>
 </html>
