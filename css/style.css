@@ -919,6 +919,11 @@ span {
 }
 
 @media (max-width: 767px) {
+  .header__title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .header__burger {
     display: block;
     position: relative;
@@ -928,10 +933,10 @@ span {
   }
   .header__burger span {
     position: absolute;
-    background-color: #6E9C9F;
+    background-color: #000000;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 1px;
     top: 9px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -939,9 +944,9 @@ span {
   .header__burger::before,
 .header__burger::after {
     content: "";
-    background-color: #6E9C9F;
+    background-color: #000000;
     width: 100%;
-    height: 2px;
+    height: 1px;
     left: 0;
     position: absolute;
     -webkit-transition: all 0.3s ease 0s;
@@ -969,11 +974,11 @@ span {
   }
   .header__max {
     position: fixed;
-    top: -100%;
-    left: 0;
+    top: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(110, 156, 159, 0.9490196078);
+    background-color: #FFFFFF;
     display: block;
     padding: 100px 0 0 0;
     -webkit-transition: all 0.3s ease 0s;
@@ -982,6 +987,7 @@ span {
   }
   .header__max.active {
     top: 0;
+    left: 0;
   }
   .header__items {
     display: block;
@@ -989,7 +995,7 @@ span {
   .header__item {
     margin: 0 0px 0 0;
     width: 100%;
-    padding: 0 0 60px 0;
+    padding: 0 0 15px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1002,10 +1008,10 @@ span {
             align-items: center;
   }
   .header__item a {
-    padding: 0 0 20px 0;
-    color: #FFFFFF;
-    font-size: 40px;
-    font-weight: 600;
+    padding: 0 0 30px 0;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 400;
   }
   .header__body {
     height: 50px;
@@ -1020,12 +1026,13 @@ span {
     margin: 0px 30px 0 0;
   }
   .header__number a {
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 22px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
   }
   .header__basket {
-    display: none;
+    position: absolute;
+    right: 10%;
   }
   .header__basket img {
     display: block;
@@ -1036,7 +1043,7 @@ span {
 }
 @media (max-width: 840px) {
   .footer__list {
-    margin: 0 0 0 0px;
+    display: none;
   }
   .footer__items {
     -webkit-box-orient: vertical;
@@ -1078,7 +1085,5 @@ span {
   .fourblock__image img {
     width: 250px;
     height: 287px;
-  }
-  
   }
 }
