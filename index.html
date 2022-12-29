@@ -39,13 +39,15 @@
                         </div>
                         <div class="header__number"><a href="tel:+74958235412" >+7 (495) 823-54-12</a></div>
                     </div>
+                </nav>
                     <div class="header__basket">
                         <a href="">
                             <img src="../img/basket.svg" alt="">
                         </a>
                     </div>
+
                 </div>
-            </nav>
+            
                 </div>
             </header>
             <div class="content">
@@ -307,44 +309,7 @@
             </footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <script src="js/slick.min.js"></script>
-    <script >$(document).ready(function(){
-    $(".oneblock__sliderleft").slick({
-        arrows:false,
-        dots:true,
-        autoplay:true,
-        autoplaySpeed: 2500,
-        asNavFor: ".oneblock__sliderritht"
-
-    });
-    $(".oneblock__sliderritht").slick({
-        arrows:false,
-        fade:true,
-        autoplay:true,
-        autoplaySpeed: 2500,
-        asNavFor: ".oneblock__sliderleft"
-
-    });
-
-    let title = document.querySelector('.twoblock__dollars');
-let arr = title.innerHTML.split(' ');
-arr[0] = '<span>' + arr[0] + '</span>';
-title.innerHTML = arr.join(' ');
-$(".fourblock__slider").slick({
-    arrows:true,
-    dots:true,
-    autoplay:true,
-    autoplaySpeed: 2500,
-    
-
-});
-$('.header__burger').click(function(event){
-    $('.header__burger, .header__max').toggleClass('active');
-    $('body').toggleClass('lock');
-    
-});
-
-});
-</script>
+        <script src="../js/slick.min.js"></script>
+    <script src="../js/start.js"></script>
     </body>
 </html>
